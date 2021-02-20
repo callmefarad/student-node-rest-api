@@ -1,0 +1,32 @@
+{
+  "name": "bdcl-api",
+  "version": "1.0.0",
+  "description": "An API that shows the API of students trained in 2020 session.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "mongoDB",
+    "mongoose",
+    "mongoDB",
+    "Atlas",
+    "Express",
+    "multer."
+  ],
+  "author": "Ubani U. Friday",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.10",
+    "multer": "^1.4.2"
+  },
+  "engines": {
+    "node": "15.3.0"
+  }
+}
