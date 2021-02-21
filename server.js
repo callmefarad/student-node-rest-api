@@ -35,7 +35,6 @@ app.get('/', (req, res) => {
     res.sendFile(process.cwd() + '/index.html');
 });
     
-}
 app.use('/api/students/image', express.static('./uploads'))
 app.use('/api', router);
 
