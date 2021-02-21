@@ -27,12 +27,12 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use('./uploads', express.static('public'))
+app.use(express.static('public'))
 
 
 app.get('/', (req, res) => {
-    // res.send({ message: "The API for CodeLab Student is fully ready for consumption." })
-    res.sendFile(process.cwd() + '/index.html');
+    // res.sendFile(process.cwd() + '/index.html');
+    res.sendFile('index.html');
 });
     
 app.use('/api/students/image', express.static('./uploads'))
