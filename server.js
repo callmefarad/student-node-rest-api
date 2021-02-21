@@ -4,7 +4,7 @@ const cors = require('cors');
 const express = require('express');
 const mongoose = require('mongoose');
 const router = require('./route/route');
-const port = process.env.PORT || 40;
+const port = process.env.PORT || 400;
 
 
 
@@ -31,7 +31,7 @@ app.use('./uploads', express.static('public'))
 
 
 app.get('/', (req, res) => {
-    res.send({message: "The API for CodeLab Student is fully ready for consumption."})
+    res.send({"message": "The API for CodeLab Student is fully ready for consumption."})
 });
     
 }
